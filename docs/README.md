@@ -12,3 +12,5 @@
 | archive | Historical status documents; retained for context, not current status |
 
 The root [README](../README.md) describes active features, setup and current evidence. Application code remains in `apps`, shared calculations in `packages`, and executable checks in `tests`.
+
+[View the presentation on GitHub](showcase/presentation.md) · [Interactive slideshow](showcase/demo-presentation.html)

@@ -94,9 +94,13 @@ A closer look at the working product. These captures use test accounts; the appl
 </tr></table>
 </details>
 
-**[Browse every screenshot →](docs/showcase/screenshot-gallery.md)** · **[Open the 28-slide walkthrough →](docs/showcase/demo-presentation.html)**
+**[Browse every screenshot →](docs/showcase/screenshot-gallery.md)** · **[View the 28-slide presentation →](docs/showcase/presentation.md)**
 
-The HTML slideshow includes captions, keyboard navigation and automatic playback. Open it locally in a browser after downloading or cloning the repository; GitHub's file viewer shows the HTML source.
+<table>
+<tr><td><strong>🎬 Product presentation</strong><br/>Follow the full walkthrough: résumé upload, job discovery, tailored applications, screenshots, live-feed evidence and dataset interpretation.<br/><br/><a href="docs/showcase/presentation.md"><strong>View presentation on GitHub →</strong></a> · <a href="https://github.com/abhishekk-y/Limit.less/archive/refs/heads/main.zip">Download slideshow & assets →</a></td></tr>
+</table>
+
+**Interactive slideshow:** download and extract the repository, then open [`docs/showcase/demo-presentation.html`](docs/showcase/demo-presentation.html) in your browser. It includes automatic playback and arrow-key navigation. GitHub renders the presentation linked above; its HTML file viewer displays source code.
 
 ---
 
