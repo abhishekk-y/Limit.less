@@ -31,6 +31,8 @@ test('resume to mission to evidence to approved demo application', async ({ page
   await expect(page.getByRole('link', {name:'Match live jobs', exact:true})).toBeVisible();
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: 'test-results/resume-upload.png', fullPage: true, animations: 'disabled' });
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.screenshot({ path: 'test-results/resume-upload-readme.png', animations: 'disabled' });
   await page.getByRole('link', { name: 'Talent Twin', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'Python', exact: true })).toBeVisible();
   await page.getByRole('link', { name: 'Career GPS', exact: true }).click();
@@ -53,6 +55,8 @@ test('resume to mission to evidence to approved demo application', async ({ page
   await page.reload();
   await expect(page.getByText('Submitted · demo')).toBeVisible();
   await page.screenshot({ path: 'test-results/application-desktop.png', fullPage: true, animations: 'disabled' });
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.screenshot({ path: 'test-results/application-desktop-readme.png', animations: 'disabled' });
   await page.setViewportSize({ width: 390, height: 844 });
   await expect(page.locator('aside')).not.toBeInViewport();
   await page.screenshot({ path: 'test-results/application-mobile.png', fullPage: true, animations: 'disabled' });
@@ -176,6 +180,8 @@ test('assessment studio stays readable in dark system mode and records fullscree
   await expect(heading).toHaveCSS('color', 'rgb(2, 6, 23)');
   await expect(heading.locator('..')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
   await page.screenshot({ path: 'test-results/assessment-studio.png', fullPage: true, animations: 'disabled' });
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.screenshot({ path: 'test-results/assessment-studio-readme.png', animations: 'disabled' });
   await heading.locator('..').getByRole('button', { name: 'Monitored check' }).click();
   await page.getByRole('checkbox').check();
   await page.getByRole('button', { name: 'Check camera & microphone' }).click();
@@ -277,6 +283,8 @@ test('hackathon dashboard exposes demo applications and SAS workspace without li
   await expect(page.getByRole('heading', {name:'From source data to skill insights'})).toBeVisible();
   await expect(page.getByRole('link', { name: 'Try the demo application flow · no employer contact' })).toBeVisible();
   await page.screenshot({ path: 'test-results/hackathon-dashboard.png', fullPage: true, animations: 'disabled' });
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.screenshot({ path: 'test-results/hackathon-dashboard-readme.png', animations: 'disabled' });
   await page.getByRole('link', { name: 'Try the demo application flow · no employer contact' }).click();
   await expect(page.getByText('Approval records a demo submission; nothing is sent to an employer.', {exact:false})).toBeVisible();
 });

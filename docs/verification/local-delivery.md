@@ -66,3 +66,5 @@ Résumé upload now displays the filename, extracted skills, unverified-claim st
 
 Settings now offers three dashboard source choices: Hackathon dataset view, Hybrid (both separately labelled), and Live job data. The choice controls presentation only; recorded challenge aggregates cannot enter the live submission worker.
 
+
+GitHub Actions run 37689051435 stopped at npm ci on the initial publication. The local checks above do not establish a passing remote CI run.
