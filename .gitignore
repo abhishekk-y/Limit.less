@@ -1,0 +1,83 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Next.js
+.next/
+out/
+
+# Python
+*.so
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+
+# Logs
+*.log
+logs/
+
+# Data (large files - tracked via DVC or downloaded)
+data/raw/*.csv
+data/raw/*.json
+data/raw/*.parquet
+data/processed/*.pkl
+data/processed/*.npy
+*.model
+*.bin
+
+# Storage
+uploads/
+tmp/
+
+# Secrets
+*.pem
+*.key
+.local/
+*.db
+*.db-shm
+*.db-wal
+*.tsbuildinfo
+apps/web/public/sw.js
+apps/web/public/workbox-*.js
+apps/web/test-results/
+apps/web/playwright-report/
+.env.runtime
+.venv-runtime/
+
+# Local agent tooling and restricted source material
+.agents/
+.codex/
+sas_hackathon_extract/
+scratch/
+*.zip
+*.xlsx
+*.xls
+**/.next-stale-*/

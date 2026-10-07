@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)",
+    "focus": "Skill training for youth",
+    "eligibility": "School/college dropouts or unemployed youth",
+    "benefits": "Free skill training, certification, and placement assistance"
+  },
+  {
+    "name": "National Apprenticeship Promotion Scheme (NAPS)",
+    "focus": "Apprenticeship training",
+    "eligibility": "ITI pass outs, graduates, diploma holders",
+    "benefits": "Stipend sharing up to 25% (max Rs. 1500 per month)"
+  },
+  {
+    "name": "Digital India",
+    "focus": "Digital literacy",
+    "eligibility": "All citizens",
+    "benefits": "Access to digital services and literacy programs (PMGDISHA)"
+  }
+]

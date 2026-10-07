@@ -1,0 +1,80 @@
+{
+  "source": "Apify crawlworks/linkedin-jobs-scraper",
+  "run_id": "dGNmlaOZmOKq7T0Mk",
+  "dataset_id": "WNCMNfE4CQ9eETqUJ",
+  "run_finished_at_utc": "2026-10-07T20:32:52.210Z",
+  "status": "SUCCEEDED",
+  "query": "Python Developer",
+  "location": "Berlin, Germany",
+  "returned_rows": 10,
+  "unique_job_urls": 10,
+  "missing_description": 0,
+  "missing_posting_date": 0,
+  "posting_date_range": [
+    "2025-01-20",
+    "2026-10-07"
+  ],
+  "example_postings": [
+    {
+      "title": "Back-end Engineer",
+      "company": "Ailoys",
+      "posted_date": "2025-01-20",
+      "url": "https://www.linkedin.com/jobs/view/4130081692"
+    },
+    {
+      "title": "Senior Python Engineer",
+      "company": "Protech Talent",
+      "posted_date": "2026-09-28",
+      "url": "https://www.linkedin.com/jobs/view/4472727127"
+    },
+    {
+      "title": "Senior Backend Engineer",
+      "company": "Holvi",
+      "posted_date": "2026-09-29",
+      "url": "https://www.linkedin.com/jobs/view/4473069637"
+    },
+    {
+      "title": "Software Engineer, Python",
+      "company": "Engelhart",
+      "posted_date": "2026-05-21",
+      "url": "https://www.linkedin.com/jobs/view/4417748171"
+    },
+    {
+      "title": "Senior Python Engineer (m/f/d)",
+      "company": "Flix",
+      "posted_date": "2026-09-05",
+      "url": "https://www.linkedin.com/jobs/view/4409046710"
+    },
+    {
+      "title": "Senior Backend Engineer (m/f/x)",
+      "company": "VERBI Software GmbH",
+      "posted_date": "2026-04-30",
+      "url": "https://www.linkedin.com/jobs/view/4406449754"
+    },
+    {
+      "title": "Senior Backend Engineer (m/f/d)",
+      "company": "Berliner Verlag",
+      "posted_date": "2026-10-07",
+      "url": "https://www.linkedin.com/jobs/view/4476598406"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Digital Waffle",
+      "posted_date": "2026-10-07",
+      "url": "https://www.linkedin.com/jobs/view/4475428413"
+    },
+    {
+      "title": "Senior Full-Stack Engineer (Python/Django + Vue.js)",
+      "company": "Hivebuy",
+      "posted_date": "2026-09-18",
+      "url": "https://www.linkedin.com/jobs/view/4466695137"
+    },
+    {
+      "title": "Senior Python Developer",
+      "company": "Digital Waffle",
+      "posted_date": "2026-10-07",
+      "url": "https://www.linkedin.com/jobs/view/4475425602"
+    }
+  ],
+  "interpretation": "A successful public feed connection test. Search results include older postings; retrieval date is not publication date. No applicant data or descriptions are exported."
+}

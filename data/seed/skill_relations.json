@@ -1,0 +1,22 @@
+[
+  {"source": "Linux", "target": "Docker", "relation_type": "prerequisite", "weight": 1.0},
+  {"source": "Docker", "target": "Kubernetes", "relation_type": "prerequisite", "weight": 1.0},
+  {"source": "Python", "target": "ML", "relation_type": "prerequisite", "weight": 1.0},
+  {"source": "Statistics", "target": "ML", "relation_type": "prerequisite", "weight": 1.0},
+  {"source": "ML", "target": "Deep Learning", "relation_type": "prerequisite", "weight": 1.0},
+  {"source": "SQL", "target": "Data Engineering", "relation_type": "prerequisite", "weight": 1.0},
+  {"source": "Python", "target": "SQL", "relation_type": "co_occurrence", "weight": 0.72},
+  {"source": "Docker", "target": "AWS", "relation_type": "co_occurrence", "weight": 0.68},
+  {"source": "React", "target": "TypeScript", "relation_type": "co_occurrence", "weight": 0.81},
+  {"source": "FastAPI", "target": "PostgreSQL", "relation_type": "co_occurrence", "weight": 0.65},
+  {"source": "ML", "target": "PyTorch", "relation_type": "co_occurrence", "weight": 0.61},
+  {"source": "Git", "target": "GitHub", "relation_type": "co_occurrence", "weight": 0.85},
+  {"source": "JavaScript", "target": "HTML", "relation_type": "co_occurrence", "weight": 0.90},
+  {"source": "HTML", "target": "CSS", "relation_type": "co_occurrence", "weight": 0.95},
+  {"source": "Java", "target": "Spring Boot", "relation_type": "co_occurrence", "weight": 0.75},
+  {"source": "C#", "target": ".NET", "relation_type": "co_occurrence", "weight": 0.80},
+  {"source": "PHP", "target": "MySQL", "relation_type": "co_occurrence", "weight": 0.70},
+  {"source": "C++", "target": "Unreal Engine", "relation_type": "co_occurrence", "weight": 0.40},
+  {"source": "Rust", "target": "WebAssembly", "relation_type": "co_occurrence", "weight": 0.35},
+  {"source": "Go", "target": "Docker", "relation_type": "co_occurrence", "weight": 0.55}
+]

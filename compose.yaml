@@ -1,0 +1,45 @@
+name: skillsetu
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: skillsetu
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-demo-password}
+      POSTGRES_DB: skillsetu
+    volumes:
+      - database:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U skillsetu"]
+      interval: 5s
+      timeout: 3s
+      retries: 15
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    environment:
+      DATABASE_URL: postgresql+asyncpg://skillsetu:${POSTGRES_PASSWORD:-local-demo-password}@db:5432/skillsetu
+      ENVIRONMENT: development
+      DEMO_MODE: "true"
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-local-development-only-change-before-deployment-2026}
+      VAULT_KEY: ${VAULT_KEY:-local-vault-only-change-before-deployment-2026}
+    command: ["sh", "-c", "cd /app/apps/api && python -m alembic upgrade head && cd /app && python -m uvicorn app.main:app --host 0.0.0.0 --port 8000"]
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/ready')"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    ports: ["127.0.0.1:3000:3000"]
+    depends_on:
+      api:
+        condition: service_healthy
+volumes:
+  database:

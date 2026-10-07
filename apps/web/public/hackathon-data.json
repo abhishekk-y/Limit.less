@@ -1,0 +1,272 @@
+{
+  "market_overview": {
+    "total_analytics_jobs": 15841,
+    "total_ds_job_postings": 93005,
+    "top_locations": [
+      {
+        "name": "Bengaluru",
+        "count": 4108
+      },
+      {
+        "name": "Mumbai",
+        "count": 2643
+      },
+      {
+        "name": "Gurgaon",
+        "count": 2129
+      },
+      {
+        "name": "Delhi Ncr",
+        "count": 1363
+      },
+      {
+        "name": "Pune",
+        "count": 1253
+      },
+      {
+        "name": "Hyderabad",
+        "count": 1179
+      },
+      {
+        "name": "Chennai",
+        "count": 1085
+      },
+      {
+        "name": "Noida",
+        "count": 682
+      },
+      {
+        "name": "Delhi",
+        "count": 382
+      },
+      {
+        "name": "Kolkata",
+        "count": 274
+      }
+    ],
+    "top_companies": [
+      {
+        "name": "TCS",
+        "count": 9064
+      },
+      {
+        "name": "Accenture",
+        "count": 5425
+      },
+      {
+        "name": "Cognizant",
+        "count": 3813
+      },
+      {
+        "name": "Wipro",
+        "count": 2566
+      },
+      {
+        "name": "IBM",
+        "count": 2480
+      },
+      {
+        "name": "Genpact",
+        "count": 2147
+      },
+      {
+        "name": "Capgemini",
+        "count": 1994
+      },
+      {
+        "name": "L&T Infotech",
+        "count": 1873
+      },
+      {
+        "name": "Tech Mahindra",
+        "count": 1830
+      },
+      {
+        "name": "HCL Technologies",
+        "count": 1783
+      }
+    ],
+    "experience_distribution": [
+      {
+        "range": "0-2 Years (Entry)",
+        "count": 5719
+      },
+      {
+        "range": "3-5 Years (Mid)",
+        "count": 5573
+      },
+      {
+        "range": "6-9 Years (Senior)",
+        "count": 2936
+      },
+      {
+        "range": "10+ Years (Lead)",
+        "count": 1613
+      }
+    ]
+  },
+  "skill_demand": {
+    "top_skills": [
+      {
+        "name": "...",
+        "count": 946
+      },
+      {
+        "name": "Sql",
+        "count": 915
+      },
+      {
+        "name": "Analytics",
+        "count": 904
+      },
+      {
+        "name": "Python",
+        "count": 840
+      },
+      {
+        "name": "Finance",
+        "count": 756
+      },
+      {
+        "name": "Java",
+        "count": 726
+      },
+      {
+        "name": "Sas",
+        "count": 636
+      },
+      {
+        "name": "Business Analysis",
+        "count": 633
+      },
+      {
+        "name": "Machine Learning",
+        "count": 629
+      },
+      {
+        "name": "Data Analysis",
+        "count": 618
+      },
+      {
+        "name": "Digital Marketing",
+        "count": 566
+      },
+      {
+        "name": "Javascript",
+        "count": 535
+      },
+      {
+        "name": "Project Management",
+        "count": 505
+      },
+      {
+        "name": "Seo",
+        "count": 495
+      },
+      {
+        "name": "Data Analytics",
+        "count": 412
+      },
+      {
+        "name": "Sales",
+        "count": 404
+      },
+      {
+        "name": "Excel",
+        "count": 393
+      },
+      {
+        "name": "Accounting",
+        "count": 376
+      },
+      {
+        "name": "Outsourcing",
+        "count": 360
+      }
+    ]
+  },
+  "junior_performance": {
+    "high_hike_profile": {
+      "big_data_skills": 3.94,
+      "maths-stats_skills": 4.71,
+      "coding_skills": 4.64,
+      "ai_and_ml_skills": 4.82,
+      "dashboard_and_storytelling_skills": 4.85
+    },
+    "low_hike_profile": {
+      "big_data_skills": 3.75,
+      "maths-stats_skills": 3.83,
+      "coding_skills": 3.85,
+      "ai_and_ml_skills": 4.28,
+      "dashboard_and_storytelling_skills": 3.81
+    },
+    "key_differentiators": [
+      {
+        "skill": "dashboard_and_storytelling_skills",
+        "gap": 1.03
+      },
+      {
+        "skill": "maths-stats_skills",
+        "gap": 0.88
+      },
+      {
+        "skill": "coding_skills",
+        "gap": 0.79
+      },
+      {
+        "skill": "ai_and_ml_skills",
+        "gap": 0.54
+      },
+      {
+        "skill": "big_data_skills",
+        "gap": 0.19
+      },
+      {
+        "skill": "id",
+        "gap": -63.81
+      }
+    ]
+  },
+  "senior_performance": {
+    "high_success_profile": {
+      "neuroticism": 36.13,
+      "extraversion": 48.86,
+      "openness_to_experience": 48.49,
+      "agreeableness": 47.72,
+      "conscientiousness": 53.68
+    },
+    "low_success_profile": {
+      "neuroticism": 36.26,
+      "extraversion": 36.88,
+      "openness_to_experience": 33.32,
+      "agreeableness": 41.12,
+      "conscientiousness": 35.74
+    },
+    "key_differentiators": [
+      {
+        "trait": "conscientiousness",
+        "gap": 17.95
+      },
+      {
+        "trait": "openness_to_experience",
+        "gap": 15.18
+      },
+      {
+        "trait": "extraversion",
+        "gap": 11.98
+      },
+      {
+        "trait": "agreeableness",
+        "gap": 6.6
+      },
+      {
+        "trait": "id",
+        "gap": 5.91
+      },
+      {
+        "trait": "neuroticism",
+        "gap": -0.13
+      }
+    ]
+  }
+}

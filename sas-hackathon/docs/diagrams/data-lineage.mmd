@@ -1,0 +1,13 @@
+flowchart LR
+  S[Immutable source file] --> I[Import receipt and schema check]
+  I --> Q[Quality profile]
+  Q --> P[Prepared table with raw values preserved]
+  P --> F[File-local analysis]
+  F --> V[Validation and sensitivity checks]
+  V --> R[Versioned aggregate result]
+  R --> E[Evidence Passport and chart]
+  E --> H[Human review and bounded action]
+  X{Check failed?} -->|Yes| N[WARN / BLOCKED / NOT_RUN]
+  I -. gate .-> X
+  Q -. gate .-> X
+  V -. gate .-> X

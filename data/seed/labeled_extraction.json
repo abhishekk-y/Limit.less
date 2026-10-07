@@ -1,0 +1,17 @@
+[
+  {
+    "text": "Software Engineer with 3 years of experience in Python, Django, and developing REST APIs.",
+    "expected_skills": ["Python", "Django", "REST API"],
+    "expected_education": []
+  },
+  {
+    "text": "Completed B.Tech in CSE from NIT Surat. Worked on a Machine Learning project using PyTorch.",
+    "expected_skills": ["Machine Learning", "PyTorch"],
+    "expected_education": [{"degree": "B.Tech", "major": "CSE", "institution": "NIT Surat"}]
+  },
+  {
+    "text": "Frontend Developer. Skilled in React, Redux, HTML5, CSS3, and JavaScript.",
+    "expected_skills": ["React", "Redux", "HTML5", "CSS3", "JavaScript"],
+    "expected_education": []
+  }
+]

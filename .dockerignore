@@ -1,0 +1,12 @@
+.git
+.env*
+.venv
+.venv-runtime
+**/.next-stale-*
+.local
+**/node_modules
+**/.next
+**/__pycache__
+**/test-results
+**/playwright-report
+scratch

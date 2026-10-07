@@ -1,0 +1,31 @@
+flowchart TB
+  A[Analytics Jobs source table · immutable] --> B{Required fields and schema confirmed?}
+  B -->|No| Z[BLOCKED · correct import or mapping · no results]
+  B -->|Yes| C[Profile row count, types, nulls, blank strings, and text availability]
+  C --> D[Create temporary WORK copy · normalized title and text]
+  D --> E[Remove HTML tags · normalize case/whitespace · preserve source columns]
+  E --> F1[key_skills field]
+  E --> F2[job_description field]
+  F1 --> G1[Scan versioned canonical phrase dictionary]
+  F2 --> G2[Scan same dictionary independently]
+  G1 --> H[At most one hit per canonical skill per source row]
+  G2 --> H
+  H --> I[Count skill mentions and field-specific eligible denominators]
+  I --> J[Compute share = mentions / rows with usable text]
+  I --> K[Pair support and Jaccard co-mention]
+  D --> L[Hash normalized title + skills + description inside WORK]
+  L --> M[Report exact-text duplicate groups and excess rows]
+  M --> N[Recompute as sensitivity only · keep original rows]
+  J --> O[Stratified manual audit · freeze labels before changes]
+  K --> O
+  N --> O
+  O --> P{Audit adequate and mappings reviewed?}
+  P -->|No| Q[Candidate only · WARN / NOT RUN]
+  P -->|Yes| R[Precision · recall · F1 · coverage · agreement]
+  R --> T[Predeclared scenario comparison and rank/rate range]
+  T --> U[Evidence passport with numerator, denominator, code/taxonomy version]
+  Q --> U
+  U --> V[Bounded descriptive sample finding · not national demand]
+  C -. description missing means unobserved text .-> W[Do not infer skill absence]
+  K -. co-mention is not prerequisite or causation .-> W
+  M -. exact text match does not prove duplicate vacancy .-> W

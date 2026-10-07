@@ -1,0 +1,5 @@
+[
+    {"id": "role_se", "title": "Software Engineer", "required_skills": ["python", "sql", "git"]},
+    {"id": "role_ds", "title": "Data Scientist", "required_skills": ["python", "sql", "machine_learning"]},
+    {"id": "role_pm", "title": "Product Manager", "required_skills": ["agile", "communication", "jira"]}
+]

@@ -1,0 +1,9 @@
+DEMO RESUME - Fictional training profile for SkillSetu
+
+Asha Sharma
+Aspiring Software Engineer
+
+I studied Python, SQL, Git, Linux, and software testing during my coursework.
+I built a small Python library management project and practiced SQL queries.
+These are self-reported learning claims, not independently verified skills.
+My next goal is to build an original service and document my contribution.

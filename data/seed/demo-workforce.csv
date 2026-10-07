@@ -1,0 +1,4 @@
+employee_id,name,role,skills
+DEMO-01,Asha Demo,Software Engineer,python:80;sql:70;git:75
+DEMO-02,Arjun Demo,Cloud Engineer,linux:85;docker:70;aws:65
+DEMO-03,Meera Demo,Data Analyst,sql:80;excel:85;statistics:70

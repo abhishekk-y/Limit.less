@@ -1,0 +1,66 @@
+flowchart TB
+  SRC[Four original challenge files kept unchanged in approved VFL]
+  SRC --> INV[Import receipt · table inventory · schema and unit check]
+  INV --> QA[Field coverage · missingness · invalid-value diagnostics]
+
+  subgraph A[Analytics Jobs · posting-like rows]
+    A1[Normalize title and clean text in temporary WORK table]
+    A2[Keep key_skills and job_description as separate fields]
+    A3[Versioned phrase rules · one hit per skill per row]
+    A4[Counts, eligible denominators, role/location/field summaries]
+    A5[Exact-text duplicate sensitivity · no silent row deletion]
+    A6[Human-labeled extraction audit · precision / recall / coverage]
+    A7[Scenario sensitivity and reviewed aggregate finding]
+    A1 --> A2 --> A3 --> A4 --> A5 --> A6 --> A7
+  end
+
+  subgraph D[DataScience Jobs · company/title-like records]
+    D1[Verify title · reference_no · num_of_jobs meaning]
+    D2[Retain records · profile repeated references]
+    D3[Parse weights · flag missing, invalid, and negative values]
+    D4[Record counts kept separate from supplied-weight sums]
+    D5[Quantiles · title/company totals · cap and max-row sensitivity]
+    D6[Reviewed interpretation · weight is not verified vacancy count]
+    D1 --> D2 --> D3 --> D4 --> D5 --> D6
+  end
+
+  subgraph J[JDS Skill Traits · separate development research]
+    J1[Verify label semantics · five trait fields · repeated-ID meaning]
+    J2[Missingness · class prevalence · trait distributions]
+    J3{Organizer approval and grouped-evaluation gates pass?}
+    J4[Optional five-feature logistic experiment]
+    J5[Grouped out-of-fold metrics vs prevalence baseline]
+    J6[Exploratory within-JDS evidence only]
+    J1 --> J2 --> J3
+    J3 -->|Yes| J4 --> J5 --> J6
+    J3 -->|No| J7[Model NOT RUN · keep descriptive results only]
+  end
+
+  subgraph S[SDS Personality Traits · isolated governance lane]
+    S1[Verify variables, label, scale, and file-local IDs]
+    S2[Missingness and aggregate descriptive summaries]
+    S3[Disclosure review and separate evidence note]
+    S4[No person-level model, ranking, or career action]
+    S1 --> S2 --> S3 --> S4
+  end
+
+  QA --> A1
+  QA --> D1
+  QA --> J1
+  QA --> S1
+  A7 --> PASS[Evidence passport · source · unit · formula · denominator · run · limitations]
+  D6 --> PASS
+  J6 --> PASS
+  J7 -. NOT RUN state .-> PASS
+  S3 --> PASS
+  PASS --> ACT{Permitted next step}
+  ACT -->|Stable and reviewed| PILOT[Prioritize a reversible training pilot]
+  ACT -->|Ambiguous mapping| REVIEW[Review the mapping or source definition]
+  ACT -->|Insufficient or unstable evidence| COLLECT[Collect evidence or defer]
+  S4 -. prohibited individual decision path .-> ACT
+  EXT[External research and taxonomies] -. Methods/context only · no added rows or silent joins .-> PASS
+  BOUNDARY[No row-level cross-file joins · no export from VFL without written approval]
+  BOUNDARY -. governs .-> A1
+  BOUNDARY -. governs .-> D1
+  BOUNDARY -. governs .-> J1
+  BOUNDARY -. governs .-> S1

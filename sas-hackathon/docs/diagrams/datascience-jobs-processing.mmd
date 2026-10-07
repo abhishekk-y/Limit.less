@@ -1,0 +1,23 @@
+flowchart TB
+  A[DataScience Jobs source table · immutable] --> B{Title, reference, weight fields confirmed?}
+  B -->|No| Z[BLOCKED · inspect metadata and source description]
+  B -->|Yes| C[Establish row grain · company/title-like source record]
+  C --> D[Keep every row · count repeated reference_no values]
+  D --> E[Normalize title for grouping · preserve raw title]
+  E --> F[Parse num_of_jobs defensively]
+  F --> G[Separate valid, missing, nonnumeric, and negative weights]
+  G --> H1[Unweighted record count: n_h = sum of row indicators]
+  G --> H2[Supplied weighted proxy: W_h = sum of valid num_of_jobs]
+  H1 --> I[Title/company distributions and ranks]
+  H2 --> I
+  I --> J[Weight median · quartiles · maximum · concentration]
+  J --> K[Influence checks: leave-one-maximum-out and declared cap c]
+  K --> L[Compare weighted and unweighted rank/order stability]
+  L --> M{Source defines weight and vacancy unit?}
+  M -->|No| N[Label as supplied weight proxy · never as unique openings]
+  M -->|Yes| O[Still report unit and source coverage with the estimate]
+  N --> P[Evidence passport · file version, denominator, parsing, scenario]
+  O --> P
+  P --> Q[Descriptive evidence for this dataset only]
+  R[No skill field in this source] -.-> S[Do not infer skills or join titles to Analytics Jobs]
+  T[No dated repeated snapshots established] -.-> U[Do not claim growth or forecast]

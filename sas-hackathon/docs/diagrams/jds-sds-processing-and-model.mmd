@@ -1,0 +1,31 @@
+flowchart TB
+  subgraph J[JDS Skill Traits · exploratory model candidate]
+    J0[Original workbook stays separate] --> J1[Verify label coding · five numeric skill fields · scale]
+    J1 --> J2[Profile missingness · class counts · repeated IDs]
+    J2 --> J3{ID verified as grouping unit and organizer allows model?}
+    J3 -->|No| J4[Descriptive group summaries only · model NOT RUN]
+    J3 -->|Yes| J5[Predeclare 5 grouped folds · same ID always in one fold]
+    J5 --> J6[Train-fold-only prevalence baseline]
+    J5 --> J7[Five-feature logistic regression · fit on four folds]
+    J6 --> J8[Score held-out group fold]
+    J7 --> J8
+    J8 --> J9[Repeat across folds · pool out-of-fold predictions]
+    J9 --> J10[AUC · Brier · threshold accuracy · coverage and class counts]
+    J10 --> J11[Compare to baseline · no tuning on held-out folds]
+    J11 --> J12[Exploratory association within JDS only]
+  end
+  subgraph S[SDS Personality Traits · governance research only]
+    S0[Original workbook stays separate] --> S1[Verify variables · label · scale · ID semantics]
+    S1 --> S2[Missingness and repeated-ID diagnostics]
+    S2 --> S3[Disclosure-safe aggregate description only]
+    S3 --> S4[No person-level prediction, screening, ranking, or career suggestion]
+  end
+  X[Analytics Jobs] -. no row-level join .-> J0
+  Y[DataScience Jobs] -. no row-level join .-> J0
+  X -. no row-level join .-> S0
+  Y -. no row-level join .-> S0
+  J12 --> E[Separate evidence passports · do not pool units]
+  J4 --> E
+  S3 --> E
+  S4 -. policy constraint .-> E
+  E --> H[Aggregate crosswalk only if separately reviewed and approved]

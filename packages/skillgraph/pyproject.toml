@@ -1,0 +1,11 @@
+[project]
+name = "skillgraph"
+version = "0.1.0"
+dependencies = [
+    "networkx",
+    "sentence-transformers",
+    "spacy",
+    "pandas",
+    "numpy",
+    "pydantic>=2.0"
+]

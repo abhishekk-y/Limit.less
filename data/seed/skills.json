@@ -1,0 +1,16 @@
+[
+    {
+        "id": "sk_python",
+        "canonical_name": "Python Programming",
+        "category": "Programming",
+        "aliases": ["python", "python3"],
+        "version": 1
+    },
+    {
+        "id": "sk_ml",
+        "canonical_name": "Machine Learning",
+        "category": "AI/ML",
+        "aliases": ["ml"],
+        "version": 1
+    }
+]

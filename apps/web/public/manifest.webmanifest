@@ -1,0 +1,10 @@
+{
+  "name": "Limit.less — Career Workspace",
+  "short_name": "Limit.less",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#f7f8fa",
+  "theme_color": "#7c3aed",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
+

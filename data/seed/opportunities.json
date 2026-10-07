@@ -1,0 +1,4 @@
+[
+    {"id": "opp_1", "type": "private", "role_id": "role_se", "location": "Bangalore", "salary": 1200000},
+    {"id": "opp_2", "type": "government", "role_id": "role_ds", "location": "Delhi", "salary": 900000}
+]

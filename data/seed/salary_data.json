@@ -1,0 +1,10 @@
+[
+  {"role": "AI Engineer", "location": "Bengaluru", "experience_years": 2, "salary_lpa": 12, "source": "public_survey"},
+  {"role": "AI Engineer", "location": "Bengaluru", "experience_years": 5, "salary_lpa": 24, "source": "public_survey"},
+  {"role": "Data Scientist", "location": "Pune", "experience_years": 3, "salary_lpa": 14, "source": "public_survey"},
+  {"role": "Data Scientist", "location": "Mumbai", "experience_years": 1, "salary_lpa": 8, "source": "public_survey"},
+  {"role": "Full Stack Dev", "location": "Hyderabad", "experience_years": 4, "salary_lpa": 18, "source": "public_survey"},
+  {"role": "Full Stack Dev", "location": "Delhi", "experience_years": 2, "salary_lpa": 10, "source": "public_survey"},
+  {"role": "DevOps/Cloud", "location": "Chennai", "experience_years": 3, "salary_lpa": 15, "source": "public_survey"},
+  {"role": "HR Analytics", "location": "Bengaluru", "experience_years": 3, "salary_lpa": 11, "source": "public_survey"}
+]

@@ -1,0 +1,130 @@
+{
+  "source": "Greenhouse public job board",
+  "board": "cloudflare",
+  "source_url": "https://boards-api.greenhouse.io/v1/boards/cloudflare/jobs?content=true",
+  "retrieved_at_utc": "2026-10-07T21:10:12.657494+00:00",
+  "http_status": 200,
+  "row_count": 426,
+  "missing_title": 0,
+  "missing_description": 0,
+  "missing_source_url": 0,
+  "duplicate_job_ids": 0,
+  "response_sha256": "1db7083f75223db34dec70132310bb7203b27e7884e97112a0bdc0305a334022",
+  "skill_mentions": [
+    {
+      "skill": "Communication",
+      "count": 301,
+      "denominator": 426,
+      "rate_percent": 70.66
+    },
+    {
+      "skill": "Networking",
+      "count": 183,
+      "denominator": 426,
+      "rate_percent": 42.96
+    },
+    {
+      "skill": "Python",
+      "count": 106,
+      "denominator": 426,
+      "rate_percent": 24.88
+    },
+    {
+      "skill": "JavaScript",
+      "count": 94,
+      "denominator": 426,
+      "rate_percent": 22.07
+    },
+    {
+      "skill": "TypeScript",
+      "count": 57,
+      "denominator": 426,
+      "rate_percent": 13.38
+    },
+    {
+      "skill": "Cybersecurity",
+      "count": 46,
+      "denominator": 426,
+      "rate_percent": 10.8
+    },
+    {
+      "skill": "Kubernetes",
+      "count": 46,
+      "denominator": 426,
+      "rate_percent": 10.8
+    },
+    {
+      "skill": "Linux",
+      "count": 40,
+      "denominator": 426,
+      "rate_percent": 9.39
+    },
+    {
+      "skill": "SQL",
+      "count": 37,
+      "denominator": 426,
+      "rate_percent": 8.69
+    },
+    {
+      "skill": "AWS",
+      "count": 34,
+      "denominator": 426,
+      "rate_percent": 7.98
+    },
+    {
+      "skill": "Testing",
+      "count": 32,
+      "denominator": 426,
+      "rate_percent": 7.51
+    },
+    {
+      "skill": "Machine Learning",
+      "count": 27,
+      "denominator": 426,
+      "rate_percent": 6.34
+    }
+  ],
+  "example_postings": [
+    {
+      "title": "Account Executive, FedCiv",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/7695702?gh_jid=7695702",
+      "updated_at": "2026-10-02T14:24:13-04:00"
+    },
+    {
+      "title": "Account Executive, Indonesia",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/8172582?gh_jid=8172582",
+      "updated_at": "2026-10-02T14:24:13-04:00"
+    },
+    {
+      "title": "AI Security Research & Red Team Engineer",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/8097321?gh_jid=8097321",
+      "updated_at": "2026-10-02T14:24:13-04:00"
+    },
+    {
+      "title": "Associate General Counsel, Privacy Compliance",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/8144669?gh_jid=8144669",
+      "updated_at": "2026-10-02T14:24:13-04:00"
+    },
+    {
+      "title": "Business Development Representative - Arabic Speaking",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/6696709?gh_jid=6696709",
+      "updated_at": "2026-10-07T12:41:31-04:00"
+    },
+    {
+      "title": "Business Development Representative - Bahasa Indonesia Speaking",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/7167659?gh_jid=7167659",
+      "updated_at": "2026-10-02T14:24:13-04:00"
+    },
+    {
+      "title": " Business Development Representative (BDR) ",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/6557318?gh_jid=6557318",
+      "updated_at": "2026-10-02T14:24:13-04:00"
+    },
+    {
+      "title": " Business Development Representative (BDR), LATAM Portuguese Speaking",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/8234270?gh_jid=8234270",
+      "updated_at": "2026-10-02T14:24:13-04:00"
+    }
+  ],
+  "interpretation": "Retrieved selected-employer sample. Collection proves feed access, not applicant suitability or employer submission."
+}

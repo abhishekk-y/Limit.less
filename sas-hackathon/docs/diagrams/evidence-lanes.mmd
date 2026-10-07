@@ -1,0 +1,24 @@
+flowchart LR
+  subgraph M[Market sample lane]
+    M1[Analytics Jobs] --> M2[Quality profile]
+    M2 --> M3[Reviewed skill and role summaries]
+  end
+  subgraph D[Weighted demand lane]
+    D1[DataScience Jobs] --> D2[Record count]
+    D1 --> D3[Separate num_of_jobs summaries]
+  end
+  subgraph J[JDS development lane]
+    J1[JDS Skill Traits] --> J2[Within-file exploratory analysis]
+  end
+  subgraph S[SDS governance lane]
+    S1[SDS Personality Traits] --> S2[Aggregate research only]
+  end
+  M3 --> P[Evidence passport]
+  D2 --> P
+  D3 --> P
+  J2 --> P
+  S2 -. No individual decision path .- P
+  P --> A{Evidence action}
+  A -->|Stable and reviewed| T[Prioritize a reversible pilot]
+  A -->|Ambiguous| R[Review mapping]
+  A -->|Missing or unstable| C[Collect evidence or defer]

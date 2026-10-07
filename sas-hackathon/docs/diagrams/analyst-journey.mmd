@@ -1,0 +1,14 @@
+flowchart TD
+  U[Analyst opens research workspace] --> Q[Select decision question]
+  Q --> L[Choose one evidence lane]
+  L --> G{Source and schema gates pass?}
+  G -->|No| B[Show blocked reason and correction path]
+  B --> L
+  G -->|Yes| X[Inspect quality and preparation]
+  X --> A[Open aggregate result and denominator]
+  A --> E[Open Evidence Passport]
+  E --> R{Does conclusion survive predeclared scenarios?}
+  R -->|Yes, reviewed| P[Prioritize a bounded pilot]
+  R -->|Mapping uncertain| M[Review phrase or concept mapping]
+  R -->|Weak, missing, unstable| C[Collect evidence or defer]
+  S[SDS aggregate result] -. blocked by policy .-> P

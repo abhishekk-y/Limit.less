@@ -1,0 +1,12 @@
+[
+  {"raw": "JS", "canonical": "JavaScript"},
+  {"raw": "k8s", "canonical": "Kubernetes"},
+  {"raw": "ML", "canonical": "Machine Learning"},
+  {"raw": "py", "canonical": "Python"},
+  {"raw": "reactjs", "canonical": "React"},
+  {"raw": "react.js", "canonical": "React"},
+  {"raw": "node", "canonical": "Node.js"},
+  {"raw": "node.js", "canonical": "Node.js"},
+  {"raw": "golang", "canonical": "Go"},
+  {"raw": "C-sharp", "canonical": "C#"}
+]

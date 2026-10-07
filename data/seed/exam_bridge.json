@@ -1,0 +1,24 @@
+[
+  {
+    "exam": "GATE CSE",
+    "eligibility": "B.Tech/BE in CSE or IT",
+    "opportunities": [
+      {"name": "M.Tech IIT Bombay", "min_score": 750, "type": "education"},
+      {"name": "ONGC Recruitment", "min_score": 800, "type": "job"}
+    ]
+  },
+  {
+    "exam": "CAT",
+    "eligibility": "Graduation with 50%",
+    "opportunities": [
+      {"name": "IIM Ahmedabad MBA", "min_score": 99, "type": "education"}
+    ]
+  },
+  {
+    "exam": "SSC CGL",
+    "eligibility": "Graduation in any discipline",
+    "opportunities": [
+      {"name": "Inspector (Central Excise)", "min_score": 140, "type": "job"}
+    ]
+  }
+]

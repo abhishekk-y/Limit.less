@@ -1,0 +1,209 @@
+{
+  "analytics_jobs": {
+    "rows": 15841,
+    "missing": {
+      "s_no": 0,
+      "experience": 0,
+      "job_description": 3508,
+      "job_desig": 0,
+      "job_type": 12011,
+      "key_skills": 1,
+      "location": 0,
+      "salary": 0
+    },
+    "job_type_normalized": {
+      "analytics": 3781,
+      "analytic": 49
+    },
+    "primary_location_top": {
+      "Bengaluru": 3753,
+      "Mumbai": 2394,
+      "Gurgaon": 1578,
+      "Delhi NCR": 1282,
+      "Pune": 998
+    },
+    "salary_label_top": {
+      "10to15": 3608,
+      "15to25": 3281,
+      "6to10": 2876,
+      "0to3": 2592,
+      "3to6": 2239,
+      "25to50": 1245
+    },
+    "skill_mentions_exact_token": {
+      "sql": {
+        "mentions": 915,
+        "denominator": 15840,
+        "rate": 0.05776515151515151
+      },
+      "python": {
+        "mentions": 840,
+        "denominator": 15840,
+        "rate": 0.05303030303030303
+      },
+      "sas": {
+        "mentions": 636,
+        "denominator": 15840,
+        "rate": 0.04015151515151515
+      },
+      "r": {
+        "mentions": 655,
+        "denominator": 15840,
+        "rate": 0.041351010101010104
+      },
+      "machine learning": {
+        "mentions": 629,
+        "denominator": 15840,
+        "rate": 0.03970959595959596
+      }
+    },
+    "key_skills_contains_ellipsis": 13806
+  },
+  "datascience_jobs": {
+    "rows": 1602,
+    "unique_reference_no": 1460,
+    "repeated_reference_rows_including_first": 276,
+    "excess_repeated_reference_rows": 142,
+    "num_of_jobs_sum": 93005,
+    "num_of_jobs_median": 22.0,
+    "num_of_jobs_min": 3,
+    "num_of_jobs_max": 4200,
+    "company_weighted_top": {
+      "TCS": 9064,
+      "Accenture": 5425,
+      "Cognizant": 3813,
+      "Wipro": 2566,
+      "IBM": 2480,
+      "Genpact": 2147,
+      "Capgemini": 1994,
+      "L&T Infotech": 1873,
+      "Tech Mahindra": 1830,
+      "HCL Technologies": 1783
+    },
+    "title_weighted_top": {
+      "Business Analyst": 32843,
+      "Data Analyst": 18095,
+      "Senior Business Analyst": 14115,
+      "Data Scientist": 9051,
+      "Data Engineer": 8044,
+      "Senior Data Analyst": 3825,
+      "Senior Data Engineer": 3411,
+      "Senior Data Scientist": 2129,
+      "Machine Learning Engineer": 964,
+      "Data Architect": 528
+    }
+  },
+  "jds": {
+    "rows": 139,
+    "positive_label_count": 73,
+    "positive_label_rate": 0.5251798561151079,
+    "excess_repeated_ids": 2,
+    "associations": [
+      {
+        "field": "big_data_skills",
+        "n": 139,
+        "mean_label_1": 3.9397260273972607,
+        "mean_label_0": 3.75,
+        "mean_difference": 0.18972602739726074,
+        "point_biserial_r": 0.1123151491351836,
+        "cohens_d_pooled": 0.22471356709643872
+      },
+      {
+        "field": "maths-stats_skills",
+        "n": 139,
+        "mean_label_1": 4.712328767123288,
+        "mean_label_0": 3.8303030303030305,
+        "mean_difference": 0.8820257368202573,
+        "point_biserial_r": 0.5237999616491891,
+        "cohens_d_pooled": 1.2224780106657658
+      },
+      {
+        "field": "coding_skills",
+        "n": 139,
+        "mean_label_1": 4.6438356164383565,
+        "mean_label_0": 3.853030303030303,
+        "mean_difference": 0.7908053134080535,
+        "point_biserial_r": 0.4438322600564152,
+        "cohens_d_pooled": 0.9846726697372856
+      },
+      {
+        "field": "ai_and_ml_skills",
+        "n": 139,
+        "mean_label_1": 4.821917808219178,
+        "mean_label_0": 4.283333333333333,
+        "mean_difference": 0.5385844748858446,
+        "point_biserial_r": 0.4046284949127303,
+        "cohens_d_pooled": 0.8796623202213534
+      },
+      {
+        "field": "dashboard_and_storytelling_skills",
+        "n": 139,
+        "mean_label_1": 4.845205479452055,
+        "mean_label_0": 3.8136363636363635,
+        "mean_difference": 1.0315691158156914,
+        "point_biserial_r": 0.5540822958691504,
+        "cohens_d_pooled": 1.3232569858682957
+      }
+    ]
+  },
+  "sds": {
+    "rows": 161,
+    "positive_label_count": 85,
+    "positive_label_rate": 0.5279503105590062,
+    "excess_repeated_ids": 9,
+    "associations": [
+      {
+        "field": "neuroticism",
+        "n": 161,
+        "mean_label_1": 36.129411764705885,
+        "mean_label_0": 36.26315789473684,
+        "mean_difference": -0.13374613003095703,
+        "point_biserial_r": -0.0059439589325761865,
+        "cohens_d_pooled": -0.011832559948189632
+      },
+      {
+        "field": "extraversion",
+        "n": 161,
+        "mean_label_1": 48.858823529411765,
+        "mean_label_0": 36.88157894736842,
+        "mean_difference": 11.977244582043348,
+        "point_biserial_r": 0.49427702123171974,
+        "cohens_d_pooled": 1.1318627288430119
+      },
+      {
+        "field": "openness_to_experience",
+        "n": 161,
+        "mean_label_1": 48.49411764705882,
+        "mean_label_0": 33.31578947368421,
+        "mean_difference": 15.17832817337461,
+        "point_biserial_r": 0.6713175330043032,
+        "cohens_d_pooled": 1.8030404814870487
+      },
+      {
+        "field": "agreeableness",
+        "n": 161,
+        "mean_label_1": 47.71764705882353,
+        "mean_label_0": 41.11842105263158,
+        "mean_difference": 6.599226006191948,
+        "point_biserial_r": 0.2926250045062718,
+        "cohens_d_pooled": 0.6091798731832049
+      },
+      {
+        "field": "conscientiousness",
+        "n": 161,
+        "mean_label_1": 53.68235294117647,
+        "mean_label_0": 35.73684210526316,
+        "mean_difference": 17.94551083591331,
+        "point_biserial_r": 0.6801940895597258,
+        "cohens_d_pooled": 1.847162596163421
+      }
+    ]
+  },
+  "method_notes": [
+    "Input rows remain separate; no cross-file joins are performed.",
+    "Skill tokens are comma-split, trimmed and case-folded; each row counts at most once per token.",
+    "Location uses the first comma-separated value only.",
+    "num_of_jobs is summed as supplied and is not interpreted as verified vacancies.",
+    "Trait statistics are unadjusted sample associations, not causal or individual predictions."
+  ]
+}

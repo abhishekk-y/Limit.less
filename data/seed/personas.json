@@ -1,0 +1,256 @@
+[
+  {
+    "name": "Abhishek",
+    "email": "abhi@example.com",
+    "education": [
+      {
+        "degree": "B.Tech CSE",
+        "institution": "National Institute of Technology",
+        "status": "final year",
+        "year_of_completion": 2024
+      }
+    ],
+    "experience": [],
+    "skills": [
+      {
+        "name": "Python",
+        "claimed_level": 4,
+        "evidence": ["GitHub", "Hackathon"]
+      },
+      {
+        "name": "Machine Learning",
+        "claimed_level": 3,
+        "evidence": ["Project"]
+      },
+      {
+        "name": "Scikit-Learn",
+        "claimed_level": 3,
+        "evidence": ["Project"]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Image Classifier",
+        "description": "CNN based image classifier built with PyTorch and deployed on AWS EC2."
+      }
+    ],
+    "certifications": [],
+    "target_role": "AI Engineer",
+    "location": "Bengaluru",
+    "preferences": {
+      "remote": true,
+      "willing_to_relocate": false
+    },
+    "is_demo": true
+  },
+  {
+    "name": "Priya",
+    "email": "priya@example.com",
+    "education": [
+      {
+        "degree": "BCA",
+        "institution": "Pune University",
+        "status": "graduated",
+        "year_of_completion": 2022
+      }
+    ],
+    "experience": [
+      {
+        "role": "Frontend Trainee",
+        "company": "TechStart Inc",
+        "years": 1
+      }
+    ],
+    "skills": [
+      {
+        "name": "React",
+        "claimed_level": 4,
+        "evidence": ["Work", "Portfolio"]
+      },
+      {
+        "name": "Node.js",
+        "claimed_level": 3,
+        "evidence": ["Work"]
+      },
+      {
+        "name": "MongoDB",
+        "claimed_level": 2,
+        "evidence": ["Course"]
+      }
+    ],
+    "projects": [
+      {
+        "name": "E-Commerce Frontend",
+        "description": "Developed dynamic UI components using React and Redux."
+      }
+    ],
+    "certifications": [],
+    "target_role": "Full Stack Dev",
+    "location": "Pune",
+    "preferences": {
+      "remote": false,
+      "willing_to_relocate": true
+    },
+    "is_demo": true
+  },
+  {
+    "name": "Rahul",
+    "email": "rahul@example.com",
+    "education": [
+      {
+        "degree": "B.E Mechanical",
+        "institution": "Mumbai University",
+        "status": "graduated",
+        "year_of_completion": 2020
+      }
+    ],
+    "experience": [
+      {
+        "role": "Mechanical Engineer",
+        "company": "AutoWorks",
+        "years": 3
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "claimed_level": 3,
+        "evidence": ["Course", "Kaggle"]
+      },
+      {
+        "name": "Data Analysis",
+        "claimed_level": 3,
+        "evidence": ["Course"]
+      },
+      {
+        "name": "SQL",
+        "claimed_level": 2,
+        "evidence": ["Project"]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Sales Data Analysis",
+        "description": "Analyzed sales patterns using Pandas and visualized with Matplotlib."
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Data Science Bootcamp",
+        "issuer": "Coursera"
+      }
+    ],
+    "target_role": "Data Science",
+    "location": "Mumbai",
+    "preferences": {
+      "remote": true,
+      "willing_to_relocate": true
+    },
+    "is_demo": true
+  },
+  {
+    "name": "Sneha",
+    "email": "sneha@example.com",
+    "education": [
+      {
+        "degree": "MBA HR",
+        "institution": "Delhi University",
+        "status": "graduated",
+        "year_of_completion": 2019
+      }
+    ],
+    "experience": [
+      {
+        "role": "HR Executive",
+        "company": "CorpHR Solutions",
+        "years": 3
+      }
+    ],
+    "skills": [
+      {
+        "name": "HR Management",
+        "claimed_level": 4,
+        "evidence": ["Work"]
+      },
+      {
+        "name": "Excel",
+        "claimed_level": 4,
+        "evidence": ["Work"]
+      },
+      {
+        "name": "Tableau",
+        "claimed_level": 2,
+        "evidence": ["Course"]
+      }
+    ],
+    "projects": [],
+    "certifications": [
+      {
+        "name": "HR Analytics Certification",
+        "issuer": "IIM Rohtak"
+      }
+    ],
+    "target_role": "HR Analytics",
+    "location": "Delhi",
+    "preferences": {
+      "remote": false,
+      "willing_to_relocate": false
+    },
+    "is_demo": true
+  },
+  {
+    "name": "Vikram",
+    "email": "vikram@example.com",
+    "education": [
+      {
+        "degree": "Diploma in Computer Engg",
+        "institution": "State Board of Technical Education",
+        "status": "graduated",
+        "year_of_completion": 2021
+      }
+    ],
+    "experience": [
+      {
+        "role": "System Admin",
+        "company": "NetSys Services",
+        "years": 2
+      }
+    ],
+    "skills": [
+      {
+        "name": "Linux",
+        "claimed_level": 4,
+        "evidence": ["Work", "Certificate"]
+      },
+      {
+        "name": "AWS",
+        "claimed_level": 2,
+        "evidence": ["Certificate"]
+      },
+      {
+        "name": "Bash Scripting",
+        "claimed_level": 3,
+        "evidence": ["Work"]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Automated Backup System",
+        "description": "Created bash scripts for daily backups to S3."
+      }
+    ],
+    "certifications": [
+      {
+        "name": "AWS Cloud Practitioner",
+        "issuer": "Amazon Web Services"
+      }
+    ],
+    "target_role": "DevOps/Cloud",
+    "location": "Hyderabad",
+    "preferences": {
+      "remote": true,
+      "willing_to_relocate": true
+    },
+    "is_demo": true
+  }
+]
